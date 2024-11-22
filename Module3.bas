@@ -6,9 +6,13 @@ Sub Sample2()
   
   Dim i
   
+  Dim endRow
+  
   ctrRow = 8
   
-  For i = 8 To 12
+  endRow = Range("C8").End(xlDown).Row
+  
+  For i = 8 To endRow
   
   
     If (Range("E" & i).Value = Range("D2").Value) Then
